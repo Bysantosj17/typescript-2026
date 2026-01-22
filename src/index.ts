@@ -8,4 +8,4 @@ function printCoord(pt: { x: number; y: number; }) {
 }
 
 printCoord({ x: 2, y: 4 })
-
+printCoord({ x: 2, y: 4 })

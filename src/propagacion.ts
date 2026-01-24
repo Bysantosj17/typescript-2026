@@ -7,3 +7,4 @@ let obj2: object = { lastname: 'Uribe' }
 let obj3: object = {edad: 1, ...obj1, ...obj2 }
 
 console.log(obj3)
+console.log(obj2)

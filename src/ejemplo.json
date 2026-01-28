@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "name": "Santtos",
+    "gustos": [
+        {
+            "hola": true
+        }
+    ]
+}

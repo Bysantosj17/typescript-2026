@@ -8,47 +8,4 @@ function printCoord(pt: { x: number; y: number; }) {
 }
 
 printCoord({ x: 2, y: 4 })
-
-function print() {
-
-}
-
-let persona = { id: 1, name: 'santos', print }
-persona = { id: 1, name: 'uriel', print: () => { } }
-
-let oficinista = { id: 1, name: 'karla', print: () => { }, capturar: () => 2 }
-
-
-//tipado pato, para ts el oficinista paso hacer persona y omite sus demas propiedades  
-persona = oficinista
-oficinista.capturar()
-persona.print()
-
-//ambitos LET
-
-var index = 0
-
-if (index === 0) {
-    let index = 2
-    console.log(index)
-}
-
-console.log(index)
-
-//UNION TYPES
-
-type StringOrNumber = string | number;
-
-function imprimirTextONumeros(arg1: StringOrNumber, arg2: StringOrNumber) {
-    if (typeof arg1 === 'string') {
-        console.log(arg1 + arg2)
-        return;
-    }
-
-    if (typeof arg2 === 'number') {
-        console.log(arg1 + arg2)
-    } 
-}
-
-imprimirTextONumeros('hola', 1)
-imprimirTextONumeros(1, 1)
+printCoord({ x: 2, y: 4 })
